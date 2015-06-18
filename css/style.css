@@ -127,7 +127,7 @@ a:active {
   height: 200px;
   float: left;
   background-image: url(../img/smSquidGirl.png);
-  border-radius: 10px;  
+  border-radius: 10px; 
   background-size: cover;
   position: relative;
 }
@@ -138,7 +138,7 @@ a:active {
   height: 200px;
   float: left;
   background-image: url(../img/smMotivation.png);
-  border-radius: 10px;  
+  border-radius: 10px;
   background-size: cover;
   position: relative;
 }
@@ -149,7 +149,7 @@ a:active {
   height: 200px;
   float: left;
   background-image: url(../img/smRoses.png);
-  border-radius: 10px;  
+  border-radius: 10px; 
   background-size: cover;
   position: relative;
 }
