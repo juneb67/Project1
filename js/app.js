@@ -36,8 +36,6 @@ var picNameObj = {
 var selectedHREF = $('.selected_480').attr('href');
 //console.log("Line 32 Selected page's name: " + selectedHREF);
 
-
-
 var pgToName = pages[selectedHREF];
 var picName = picNameObj[pgToName];
 //console.log("line 30 Pic name is: " + picName);

@@ -21,6 +21,8 @@ body {
   font: 1em/1.5 'Raleway', sans-serif;
 }
 
+/********** HEADERS *************/
+
 h1,
 h2 {
 	font-family: 'Droid Serif', serif;
@@ -76,22 +78,18 @@ h2.linkStyleSel {
 
 h3 { /* This includes picture captions */
   font-size: 1.25em; /* 20px/16px  */
-  color: #48525c;
+  color: #C63D0F;
   line-height: 1.2;
+  border-top: #333 1px solid;
+  border-bottom: #333 1px solid;
   margin-bottom: 1.7em; /* 34px */
+  padding: 10px 10px;
 }
 
-.centerAlign {
-	text-align: center;
-}
-
+/*********** IMAGES ************/
 img {
   border-radius: 10px;  
 }
-
-/*.selected {
-	visibility: hidden;
-} */
 
 .selected img
 {
@@ -111,17 +109,7 @@ img {
 	-ms-filter: blur(0);
 }
 
-.gallery img {
-    display: block;
-    max-width:640px;
-    height: auto;
-}
-
-.gallery ul {
-	list-style-type: none;
-}
-
-/* Lists ------------------ */
+/*********** LISTS ************/
 
 ul,
 ol {
@@ -130,6 +118,36 @@ ol {
 
 li {
   margin-bottom: 10px;
+}
+
+/************ LINKS ***********/
+
+a:link {
+  color: #7E8F7C;
+  text-decoration: none;
+}
+
+a:visited {
+  color: coral;
+}
+
+a:hover {
+  color: green;
+}
+
+a:active {
+  color: lightcoral;
+}
+
+/************ GALLERY PAGE *************/
+.centerAlign {
+	text-align: center;
+}
+
+.gallery img {
+    display: block;
+    max-width:640px;
+    height: auto;
 }
 
 ul#imageGallery {
@@ -150,33 +168,15 @@ ul#imageGallery li img {
 	display: block;
 }
 
-/* Links ------------------ */
-
-a:link {
-  color: #7E8F7C;
-  text-decoration: none;
+.gallery ul {
+	list-style-type: none;
 }
-
-a:visited {
-  color: coral;
-}
-
-a:hover {
-  /* color: rgba(255, 169, 73, .7); */
-  color: green;
-}
-
-a:active {
-  color: lightcoral;
-}
-
-/* Main Styles --------------------- */
 
 #overlay {
   background:rgba(0,0,0,0.7);
-  width: 100%;
-  height: 100%;
-  position: absolute;
+  width: 50%;
+  height: 85%;
+  position: fixed;
   top: 0;
   left: 0;
   display: none;
@@ -191,6 +191,8 @@ a:active {
   color: #fff;
 }
 
+/********* HEADER ************/
+
 .name-header {
   padding-top: 15px;
   height: 230px;
@@ -200,6 +202,17 @@ a:active {
   text-align: center;
 }
 
+.title { /* Art for your space. */
+  color: #FDF3E7;
+  font-size: 1.625rem;
+  letter-spacing: .065em;
+  font-weight: 200;
+  text-shadow: 2px 2px 2px #000000;
+  padding-bottom: 10px;
+}
+
+
+/********* NAVIGATION ************/
 .pic-content {
   height: 230px;
   width: 100%;
@@ -277,16 +290,7 @@ a:active {
 }
 
 
-/* Layout Styles ------------------ */
-
-.title { /* Art for your space. */
-  color: #FDF3E7;
-  font-size: 1.625rem;
-  letter-spacing: .065em;
-  font-weight: 200;
-  text-shadow: 2px 2px 2px #000000;
-  padding-bottom: 10px;
-}
+/********* PRIMARY CONTENT **********/
 
 .primary-content {
   width: 75%;
@@ -297,6 +301,8 @@ a:active {
 
 }
 
+/********* FOOTER **********/
+
 .main-footer {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -305,7 +311,8 @@ a:active {
   clear: both;
 }
 
-/*@media (max-width: 768px) { */
+/******** RESPONSIVE **************/
+
 @media only screen and (max-width: 500px) {
 	
   .title, .name-header {
