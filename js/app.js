@@ -1,4 +1,83 @@
 $(document).ready(function() {
+	
+//Get all the information about the navigation images and pages
+//Put them in an array
+var pagesArray = [
+	{
+		divId:"pic1", 
+		smId:"pic1sm", 
+		picNameSmall: "nav1.jpg", 
+		picNameMedium: "navMed1.jpg",
+    	picNameLarge: "smSquidGirl.png",
+    	pagename: "Home",
+    	pageAddress: "index.php"
+	}, 
+	{
+		divId:"pic2", 
+		smId:"pic2sm", 
+		picNameSmall: "nav2.jpg", 
+		picNameMedium: "navMed2.jpg",
+    	picNameLarge: "smMotivation.png",
+    	pagename: "About",
+    	pageAddress: "about.php"
+	}, 
+	{
+		divId: "pic3",
+		smId: "pic3sm",
+		picNameSmall: "nav3.jpg",
+		picNameMedium: "navMed3.jpg",
+		picNameLarge: "smRoses.png",
+		pagename: "Gallery",
+		pageAddress: "gallery.html"
+	}, 
+	{
+		divId: "pic4",
+		smId: "pic4sm",
+		picNameSmall: "nav4.jpg",
+		picNameMedium: "navMed4.jpg",
+		picNameLarge: "smMelt.png",
+		pagename: "Shop",
+		pageAddress: "shop.html"
+	}, 
+	{
+		divId: "pic5",
+		smId: "pic5sm",
+		picNameSmall: "nav5.jpg",
+		picNameMedium: "navMed5.jpg",
+		picNameLarge: "smGettingReady.png",
+		pagename: "Commission",
+		pageAddress: "commission.html"
+	}, 
+	{
+		divId: "pic6",
+		smId: "pic6sm",
+		picNameSmall: "nav6.jpg",
+		picNameMedium: "navMed6.jpg",
+		picNameLarge: "smYumE.png",
+		pagename: "Contact",
+		pageAddress: "contact.html"
+	}
+];
+
+//Get the name of the current page 
+var fileName = location.pathname.substring(1);
+
+//Assign filename variable the key for the pagesArray
+if(fileName === "index.php") {
+	var selPgNo = 0;
+} else if (fileName === "about.php"){
+	selPgNo = 1;
+} else if (fileName === "gallery.html"){
+	selPgNo = 2;
+} else if (fileName === "shop.html"){
+	selPgNo = 3;
+} else if (fileName === "commission.html"){
+	selPgNo = 4;
+} else {
+	selPgNo = 5;
+};
+
+console.log("Line 7 is: " + pagesArray[selPgNo].pageAddress + " should be " + fileName);
 
 //Navigation for smaller < 480 screen size
 //This array will fill in the ID and the image for each navigation item.
@@ -13,8 +92,8 @@ var obj = {
 
 //page address with page name in navigation
 var pages = {
-  "index.html": "Home",
-  "about.html": "About",
+  "index.php": "Home",
+  "about.php": "About",
   "gallery.html": "Gallery",
   "shop.html": "Shop",
   "commission.html": "Commission",
@@ -37,6 +116,7 @@ var selectedHREF = $('.selected_480').attr('href');
 //console.log("Line 32 Selected page's name: " + selectedHREF);
 
 var pgToName = pages[selectedHREF];
+
 var picName = picNameObj[pgToName];
 //console.log("line 30 Pic name is: " + picName);
 
