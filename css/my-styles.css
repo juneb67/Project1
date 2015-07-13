@@ -1,0 +1,216 @@
+/* Layout
+================================ */
+.name-header {
+  padding-top: 15px;
+  height: 230px;
+  background: linear-gradient(#DF9F83, #fff);
+  border-bottom: 2px solid #dfe2e6;
+  background-size: cover;
+  text-align: center;
+}
+
+.title { /* Art for your space, etc. on each page */
+  color: #FDF3E7;
+  font-size: 1.625rem;
+  letter-spacing: .065em;
+  font-weight: 200;
+  text-shadow: 2px 2px 2px #000000;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+h1.h1Title {  
+  font-family: 'Droid Serif', serif;
+  font-size: 5.625rem; /* 90px/16px  */
+  color: #C63D0F;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: normal;
+  line-height: 1.3; 
+  text-shadow: 2px 2px 2px #000000;
+  margin: 12px 0 0;
+}
+
+.h3Center {
+  font-family: 'Droid Serif', serif;
+  color: #3E4C3C;
+  text-align: center;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #dfe2e6;
+}
+
+#title1 {
+  margin-top: 0;
+  display: inherit;
+  padding-left: 15px;
+}
+
+#title2 {
+  margin-top: 0;
+  display: inherit;
+}
+
+#title3 {
+  font-size: 2.5rem;
+  display: inline;
+  padding-right: 15px;
+  vertical-align: middle;
+}
+
+#title4 {
+  font-size: 2.5rem;
+  display: inline;
+  padding-left: 15px;
+  vertical-align: middle;
+}
+
+#title5 {
+  margin-top: 0;
+  display: inherit;
+  padding-right: 12%;  
+}
+
+.buttonRow {
+  padding-top: 11px;
+}
+
+img {
+  border-radius: 10px;
+}
+
+.smallGallery {
+  padding: 15px;
+}
+
+.smallGalPics {
+  padding: 10px;
+}
+
+.allArt{
+  padding: 10px;
+}
+
+.shopRow {
+  margin-bottom: 25px;
+}
+
+.shopRow2 {
+  margin-bottom: 25px;
+}
+
+.topRow {
+  border-top: 2px solid #dfe2e6;
+  padding-top: 20px;}
+
+body {
+  color: #3B3738; /* Text color for body */
+  margin: 0;
+  font: 1em/1.5 'Raleway', sans-serif;
+}
+
+.primary-content {
+  width: 75%;
+  padding: 25px;
+  margin: auto;
+  max-width: 960px;
+}
+
+.homePic {
+  padding-bottom: 15px;
+}
+
+.artVideoTitle {
+  color: white;
+  font-size: 1.75em;
+}
+
+.artVideo {
+  background-color: rgba(0,0,0,0.50);
+  border-radius: 10px;
+  border: 2px solid rgba(59, 55, 56, 0.95);
+}
+
+#modalTitle {
+  padding-bottom: 12px;
+ }
+ 
+ .mLink {
+  font-size: 1.35rem;
+  color: #7E8F7C;
+}
+
+.artRow {
+  border-top: 2px solid #3B3738;
+  padding-top: 10px;
+}
+
+.main-footer {
+  padding-top: 22px;
+  padding-bottom: 10px;
+  border-top: 10px solid #C63D0F;
+  border-bottom: 10px solid #C63D0F;
+  text-align: center;
+  clear: both;
+  background-color: rgba(198, 61, 15, 0.2);
+}
+
+/************ Commission PAGE *************/
+
+.commissionContent {
+  color: white;
+  text-align: left;
+  line-height: 1.95em;
+  padding: 15px 50px;
+  border-top: 10px solid #C63D0F;
+  margin: 25px 0 60px;
+  background: #434a52 url('../img/lgStars2.jpg') no-repeat center;
+  background-size: cover;
+  box-shadow: inset 0 0 50px 10px rgba(0,0,0, .8);
+  border-radius: 10px;
+
+	}
+
+/* Icons
+================================ */
+
+[class*="fi-"] {
+  font-size: 3.4em;
+  text-align: center;
+  color: #7E8F7C;
+  display: block;
+  margin-top: 40px;
+}
+
+/* Media Queries
+================================ */
+
+@media (max-width: 768px) {
+
+  h1.h1Title {  
+  	font-size: 4rem;
+  }
+  
+  .name-header {
+	height: 195px;
+  }
+
+}
+
+@media only screen and (max-width: 500px) {
+  .title,
+  .name-header {
+	font-size: 1.2rem;
+	height: 130px;
+	text-shadow: 2px 2px 1px #000000;
+
+  }
+  h1.h1Title {  
+  	font-size: 1.5rem;
+  }
+
+  .primary-content {
+    padding-top: 25px;
+	padding-left: 0;
+	padding-right: 0;
+  }
+

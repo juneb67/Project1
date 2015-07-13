@@ -1,20 +1,36 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 	<head>
         <title><?php echo $title; ?></title>
-        <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,700italic,400italic|Raleway:400,500,600,700' 
-        rel='stylesheet' type='text/css'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,700italic,400italic|Raleway:400,500,600,700' rel='stylesheet' type='text/css'>
+    <?php
+    if($pageName == "index.php"){
+    ?>
         <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
         <link href="img/favicon32.ico" rel="shortcut icon" type="image/x-icon" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/normalize.css" rel="stylesheet" media="screen">
         <link href="css/foundation.css" rel="stylesheet" media="screen">
-        <!--<link href="css/foundation-icons.css" rel="stylesheet" media="screen">-->
         <link href="css/style.css" rel="stylesheet" media="screen">
+        <script src="js/vendor/modernizr.js"></script>
+    <?php
+    } else {
+    ?>
+        <link href="../img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <link href="../img/favicon32.ico" rel="shortcut icon" type="image/x-icon" />
+        <link href="../css/normalize.css" rel="stylesheet" media="screen">
+        <link href="../css/foundation.css" rel="stylesheet" media="screen">
+        <link href="../css/style.css" rel="stylesheet" media="screen">
+        <script src="../js/vendor/modernizr.js"></script>
+	<?php
+    }
+    ?>        
+
 	</head>
+
 	<body>
    		<header class="name-header">
       		<span class="title"><?php echo $titleClass; ?></span>
-      		<h1><?php echo $h1Title; ?></h1>
+      		<h1 class="h1Title"><?php echo $h1Title; ?></h1>
         </header>
         

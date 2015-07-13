@@ -28,7 +28,8 @@ h2 {
 	font-family: 'Droid Serif', serif;
 }
 
-h1 {  
+h1.h1Title {  
+  font-family: 'Droid Serif', serif;
   font-size: 5.625rem; /* 90px/16px  */
   color: #C63D0F;
   text-transform: uppercase;
@@ -54,6 +55,17 @@ h2.commHeading {
   margin: 0 0 .5em; /* 0 0 26px */
 }
 
+h2.labelrow {
+   width: 80%;
+   height: 9%;
+   font: .95em Sans-Serif;font: 14px Sans-Serif;
+   color: #fff;
+   text-align: center;
+   position: absolute;
+   bottom: 0%;
+   background: rgba(198, 61, 15, 0.75);
+   border-radius: 8px;
+}
 
 h2.linkStyle {
   position: absolute;
@@ -243,10 +255,65 @@ ul#imageGallery li img {
 
 
 /********* NAVIGATION ************/
+.pic-content2 {
+  padding-top: 15px;
+  width: 96%;
+}
+
+#pic1a {
+  width: 135px;
+  height: 200px;
+  background-image: url(../img/smSquidGirl.png);
+  background-repeat: no-repeat;
+  border-radius: 10px; 
+  position: relative;
+}
+#pic2a {
+  width: 135px;
+  height: 200px;
+  background-image: url(../img/smMotivation.png);
+  background-repeat: no-repeat;
+  border-radius: 10px; 
+  position: relative;
+}
+#pic3a {
+  width: 135px;
+  height: 200px;
+  background-image: url(../img/smRoses.png);
+  background-repeat: no-repeat;
+  border-radius: 10px; 
+  position: relative;
+}
+#pic4a {
+  width: 135px;
+  height: 200px;
+  background-image: url(../img/smMelt.png);
+  background-repeat: no-repeat;
+  border-radius: 10px; 
+  position: relative;
+}
+#pic5a {
+  width: 135px;
+  height: 200px;
+  background-image: url(../img/smGettingReady.png);
+  background-repeat: no-repeat;
+  border-radius: 10px; 
+  position: relative;
+}
+#pic6a {
+  width: 135px;
+  height: 200px;
+  background-image: url(../img/smYumE.png);
+  background-repeat: no-repeat;
+  border-radius: 10px; 
+  position: relative;
+}
+
+
 .pic-content {
   height: 230px;
   width: 100%;
-  padding-left: 11%;
+  margin: 0 10%;
 }
 
 #pic1 {
@@ -343,13 +410,13 @@ ul#imageGallery li img {
 
 /******** RESPONSIVE **************/
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 1130px) {
 	
   .title, .name-header {
 	font-size: 1.2rem;
 	height: 130px;
   }
-  h1 {  
+  h1.h1Title {  
   	font-size: 1.5rem;
   }
   .pic-content {
@@ -358,13 +425,35 @@ ul#imageGallery li img {
   h2.linkStyle {
 	 display: none; 
   }
+  
+  .pic-content-480 {
+	display: none;
+	
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+  .title, .name-header {
+	font-size: 1.2rem;
+	height: 130px;
+  }
+  h1.h1Title {  
+  	font-size: 1.5rem;
+  }
+  .pic-content {
+	display: none;
+  }
+  h2.linkStyle {
+	 display: none; 
+  }
+  
+
   .pic-content-480 {
 	display: inherit;
   	height: 191px;
 	padding: 15px;
-	
   }
-
   #pic1sm, #pic2sm, #pic3sm, #pic4sm, #pic5sm, #pic6sm {
 	margin: 0 auto 4px;
 	width: 325px;
@@ -374,11 +463,9 @@ ul#imageGallery li img {
 	position: relative;
 	border: 1px solid #000;
   }
-
-.primary-content {
-  padding: 0;
-  border: none;
+  .primary-content {
+    padding: 0;
+    border: none;
+  }
 }
 
-		
-}

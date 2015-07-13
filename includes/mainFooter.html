@@ -1,0 +1,60 @@
+
+    <footer class="main-footer">
+      <p>
+        All rights reserved. &copy; <a href="http://tapastic.com/vmbowman95" target="_blank">Victoria Bowman</a> 2015.
+      </p>
+    </footer>
+    
+	<?php
+       if($pageName == "index2.php") {
+	?>
+    
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.3.11/slick.min.js"></script>
+    <!-- My JavaScript customized scripts -->
+	<script src="js/jquery.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+    				    
+    <?php
+      } else {
+	?>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.3.11/slick.min.js"></script>
+    <script src="../js/jquery.js"></script>
+	<script type="text/javascript" src="../slick/slick.min.js"></script>
+    <script src="../js/foundation.min.js"></script>
+    <script src="../js/app.js" type="text/javascript" charset="utf-8"></script>
+
+	<?php
+	  }
+	?>
+        
+	<script>
+      $(document).foundation();
+    </script>         
+    
+
+    <script type="text/javascript">
+        $(document).ready(function(){       
+			$('.fade').slick({
+				dots: true,
+				infinite: true,
+				speed: 500,
+				arrows:true,
+				slidesToShow: 2,
+				slidesToScroll: 2,
+				slide: ".photo",
+				autoplay:true,
+				autoplaySpeed: 2000
+			 });
+        });
+	</script>
+          
+  </body>
+    
+</html>

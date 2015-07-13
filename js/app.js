@@ -1,7 +1,6 @@
 $(document).ready(function() {
-	
-//Get all the information about the navigation images and pages
-//Put them in an array
+
+//Get all the information about the navigation images and pages and put them into an object array
 var pagesArray = [
 	{
 		divId:"pic1", 
@@ -9,7 +8,7 @@ var pagesArray = [
 		picNameSmall: "nav1.jpg", 
 		picNameMedium: "navMed1.jpg",
     	picNameLarge: "smSquidGirl.png",
-    	pagename: "Home",
+    	pageName: "Home",
     	pageAddress: "index.php"
 	}, 
 	{
@@ -18,8 +17,8 @@ var pagesArray = [
 		picNameSmall: "nav2.jpg", 
 		picNameMedium: "navMed2.jpg",
     	picNameLarge: "smMotivation.png",
-    	pagename: "About",
-    	pageAddress: "about.php"
+    	pageName: "About",
+    	pageAddress: "index.php"
 	}, 
 	{
 		divId: "pic3",
@@ -27,7 +26,7 @@ var pagesArray = [
 		picNameSmall: "nav3.jpg",
 		picNameMedium: "navMed3.jpg",
 		picNameLarge: "smRoses.png",
-		pagename: "Gallery",
+		pageName: "Gallery",
 		pageAddress: "gallery.html"
 	}, 
 	{
@@ -36,7 +35,7 @@ var pagesArray = [
 		picNameSmall: "nav4.jpg",
 		picNameMedium: "navMed4.jpg",
 		picNameLarge: "smMelt.png",
-		pagename: "Shop",
+		pageName: "Shop",
 		pageAddress: "shop.html"
 	}, 
 	{
@@ -45,7 +44,7 @@ var pagesArray = [
 		picNameSmall: "nav5.jpg",
 		picNameMedium: "navMed5.jpg",
 		picNameLarge: "smGettingReady.png",
-		pagename: "Commission",
+		pageName: "Commission",
 		pageAddress: "commission.html"
 	}, 
 	{
@@ -54,33 +53,36 @@ var pagesArray = [
 		picNameSmall: "nav6.jpg",
 		picNameMedium: "navMed6.jpg",
 		picNameLarge: "smYumE.png",
-		pagename: "Contact",
+		pageName: "Contact",
 		pageAddress: "contact.html"
 	}
 ];
 
-//Get the name of the current page 
-var fileName = location.pathname.substring(1);
+//Get the location of the current page 
+var fileName = location.pathname;
+//var fileName = location;
+//console.log("line 5, fileName is: " + fileName);
 
 //Assign filename variable the key for the pagesArray
-if(fileName === "index.php") {
-	var selPgNo = 0;
-} else if (fileName === "about.php"){
+if (fileName.search("about") > 0 ){
 	selPgNo = 1;
-} else if (fileName === "gallery.html"){
+} else if (fileName.search("gallery") > 0 ){
 	selPgNo = 2;
-} else if (fileName === "shop.html"){
+} else if (fileName.search("shop") > 0 ){
 	selPgNo = 3;
-} else if (fileName === "commission.html"){
+} else if (fileName.search("commission") > 0 ){
 	selPgNo = 4;
-} else {
+} else if (fileName.search("contact") > 0 ){
 	selPgNo = 5;
+} else {
+	selPgNo = 0;
 };
 
-console.log("Line 7 is: " + pagesArray[selPgNo].pageAddress + " should be " + fileName);
+//console.log("array items: " + pagesArray[selPgNo].picNameSmall + " selPgNo is: " + selPgNo);
 
 //Navigation for smaller < 480 screen size
 //This array will fill in the ID and the image for each navigation item.
+//[1] and [2] in pagesArray
 var obj = {
   "#pic1sm": "nav1.jpg",
   "#pic2sm": "nav2.jpg",
@@ -110,26 +112,45 @@ var picNameObj = {
   "Contact": "pic6sm"
 };
 
-
 //Get href for .selected_480 - this will be the "selected" page's name
-var selectedHREF = $('.selected_480').attr('href');
-//console.log("Line 32 Selected page's name: " + selectedHREF);
+//var selectedHREF = $('.selected_480').attr('href');
+//console.log("ORIGINAL Line 113 Selected page's name: " + selectedHREF);
+//console.log("New line 113 page name is: " + pagesArray[selPgNo].pageAddress);
+var selectedHREF = pagesArray[selPgNo].pageAddress;
 
-var pgToName = pages[selectedHREF];
 
-var picName = picNameObj[pgToName];
-//console.log("line 30 Pic name is: " + picName);
+//var pgToName = pages[selectedHREF];
+//console.log("ORIGINAL line 116 pgToName is: " + pgToName);
+var pgToName = pagesArray[selPgNo].pageName;
 
+//var picName = picNameObj[pgToName];
+//console.log("ORIGINAL line 119 Pic name is: " + picName);
+var picName = pagesArray[selPgNo].smId;
+
+
+//console.log("line 131 is: " + pgToName);
 //Set textValue2 variable to equal the whole line of html for selected page
-var textValue2 = '<div id="' + picName + '"><h2 class="linkStyle">' + pages[selectedHREF] + '</h2></div>';
+//var textValue2 = '<div id="' + picName + '"><h2 class="linkStyle">' + pages[selectedHREF] + '</h2></div>';
+var textValue2 = '<div id="' + picName + '"><h2 class="linkStyle">' + pgToName + '</h2></div>';
 //console.log("Line 29 html is: " + textValue2);
 $( "div.sel_480" ).html(textValue2);
 
 //The .each function will iterate through each object in the obj array
 //The function will then populate the css background with the correct image
-$.each( obj, function( key, value ) {
+//$.each( obj, function( key, value ) {
+	//$(key).css("background-image", "url(../img/" + value + ")");
+	//console.log("line 139 keys and values. Key " + key + " value " + value);
+//});
+
+for(var i = 0; i < pagesArray.length; i++){
+	var key = "#";
+	key += pagesArray[i].smId; // do something
+	var value = pagesArray[i].picNameSmall; // do something
 	$(key).css("background-image", "url(../img/" + value + ")");
-});
+
+	//console.log("line 148 keys and values. Key " + key + " value " + value);
+};
+
 
 //Navigation for larger screens
 //When mouse hovers, fade picture
@@ -140,6 +161,9 @@ $( ".imgNav" ).hover(function() {
 $( ".imgNav" ).mouseleave(function() {
   $( this ).fadeTo( "fast", 1.0 )
 });
+
+
+
 
 //Problem user when clicing on image goes to a dead end
 //Solution: create an overlay with the large image - Lightbox
