@@ -6,6 +6,7 @@
 	$pageName = "index2.php";
 	
 	include ('./includes/mainHeader.html');
+	include ('./includes/pic_content.html');
 
 ?>
         

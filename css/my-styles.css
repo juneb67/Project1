@@ -39,6 +39,15 @@ h1.h1Title {
   border-bottom: 2px solid #dfe2e6;
 }
 
+.navRow {
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+.navRowBottom {
+  border-top: 2px solid #dfe2e6;
+}
+
 #title1 {
   margin-top: 0;
   display: inherit;
@@ -68,6 +77,12 @@ h1.h1Title {
   margin-top: 0;
   display: inherit;
   padding-right: 12%;  
+}
+
+#title6 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  display: inline;
 }
 
 .buttonRow {
@@ -145,13 +160,23 @@ body {
 }
 
 .main-footer {
+  width: 100%;
   padding-top: 22px;
   padding-bottom: 10px;
   border-top: 10px solid #C63D0F;
   border-bottom: 10px solid #C63D0F;
   text-align: center;
-  clear: both;
   background-color: rgba(198, 61, 15, 0.2);
+  }
+
+.contactForm {
+  border-radius: 5px;
+}
+
+.contactLead {
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  padding: 10px
 }
 
 /************ Commission PAGE *************/

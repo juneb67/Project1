@@ -204,6 +204,20 @@ $overlay.click(function(){
   $overlay.hide();
 });
 
+//Footer - to keep it at the bottom
+$(window).bind("load", function () {
+	console.log("It loaded");
+    var footer = $("#footer");
+    var pos = footer.position();
+    var height = $(window).height();
+    height = height - pos.top - 50;
+    height = height - footer.height();
+    if (height > 0) {
+        footer.css({
+            'margin-top': height + 'px'
+        });
+    }
+});
 
 
 }); //End of page ready function

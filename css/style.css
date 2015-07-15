@@ -317,68 +317,50 @@ ul#imageGallery li img {
 }
 
 #pic1 {
-  margin: 15px;
   width: 135px;
   height: 200px;
-  float: left;
   background-image: url(../img/smSquidGirl.png);
-  border-radius: 10px; 
-  background-size: cover;
+  border-radius: 5px; 
   position: relative;
 }
 
 #pic2 {
-  margin: 15px;
   width: 135px;
   height: 200px;
-  float: left;
   background-image: url(../img/smMotivation.png);
-  border-radius: 10px;
-  background-size: cover;
+  border-radius: 5px;
   position: relative;
 }
 
 #pic3 {
-  margin: 15px;
   width: 135px;
   height: 200px;
-  float: left;
   background-image: url(../img/smRoses.png);
-  border-radius: 10px; 
-  background-size: cover;
+  border-radius: 5px; 
   position: relative;
 }
 
 #pic4 {
-  margin: 15px;
   width: 135px;
   height: 200px;
-  float: left;
   background-image: url(../img/smMelt.png);
-  border-radius: 10px;  
-  background-size: cover;
+  border-radius: 5px;  
   position: relative;
 }
 
 #pic5 {
-  margin: 15px;
-  width: 135px;
-  height: 200px;
-  float: left;
+  width: 108px;
+  height: 160px;
   background-image: url(../img/smGettingReady.png);
-  border-radius: 10px;  
-  background-size: cover;
+  border-radius: 5px;  
   position: relative;
 }
 
 #pic6 {
-  margin: 15px;
   width: 135px;
   height: 200px;
-  float: left;
   background-image: url(../img/smYumE.png);
-  border-radius: 10px;  
-  background-size: cover;
+  border-radius: 5px;  
   position: relative;
 }
 
