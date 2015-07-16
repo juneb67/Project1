@@ -76,7 +76,7 @@
         
             <!-- Beginning of modal window code  -->
             <div id="myModal2" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
-                <h2 id="modalTitle">Art Samples!</h2>
+                <div class="alignModalText"><span style="font-family: 'Droid Serif', serif; font-size: 2.3125rem; color: #c63D0f;">Art Samples!</span><span class="mlink">  Click any image to view individually.</span></div>
                 <div class="row artRow"><!-- set up row for all art work view  -->
                     <div class="large-12 hide-for-small column"><!-- hide for small column  -->
                         <div class="row"><!-- rows for picture modal window  -->

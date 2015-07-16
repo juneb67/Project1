@@ -149,9 +149,13 @@ body {
   padding-bottom: 12px;
  }
  
- .mLink {
+.mLink {
   font-size: 1.35rem;
   color: #7E8F7C;
+}
+
+.alignModalText{
+  text-align: center;
 }
 
 .artRow {

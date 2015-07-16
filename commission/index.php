@@ -80,7 +80,7 @@ I will not, however, draw the following:
 </ul>
 
 <p>
-I also run a web-comic series called <a href="http://tapastic.com/series/Paperback-Trade" target="_blank">Paperback Trade on Tapastic</a>- it&#146;s a Slice of Life Comedy about how I deal with situations that fall into or on me. You can support me further there by subscribing!
+For further informaiton, you can email me at <a href="mailto:information@toribowman.com">information@toribowman.com</a> or fill out my <a href="../contact/index.php">contact form</a>. I also run a web-comic series called <a href="http://tapastic.com/series/Paperback-Trade" target="_blank">Paperback Trade on Tapastic</a>- it&#146;s a Slice of Life Comedy about how I deal with situations that fall into or on me. You can support me further there by subscribing!
 </p>
 
           </div> <!-- End commissionContent -->
