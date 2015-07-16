@@ -6,7 +6,7 @@
 	$pageName = "commission";
 	
 	include ('../includes/mainHeader.html');
-	//include ('../includes/pic_content.html');
+	include ('../includes/pic_content.html');
 
 ?>
 
@@ -14,8 +14,8 @@
 			<div class="commissionContent">
                 <h2 class="commHeading">Own an original!</h2>
                 <p>
-                    My name is Victoria Bowman. I'm a 20-year-old student attending the Hite Art College at 
-                    the University of Louisville. I'm working toward a BA, with a focus on graphic design.
+                    My name is Victoria Bowman. I&#39;m a 20-year-old student attending the Hite Art College at 
+                    the University of Louisville. I&#39;m working toward a BA, with a focus on graphic design.
              	</p>
                 <p> 
                     My illustrations focus on the strange - I like things that are weird but still retain 
@@ -52,7 +52,7 @@
     </ul>
   </li>
   <li>Anymore characters/figures added will be an edition $5</li>
-  <li>Print sizes (price is in addition to what kind of image you’d like):
+  <li>Print sizes (price is in addition to what kind of image you&#39;d like.
   	<ul>
       <li>Small $10</li>
       <li>Medium $25</li>
@@ -62,12 +62,12 @@
  </ul>
 
 <p>
-Due to my own personal constraints, the largest I can mail is 24'' x 36” as a poster. 
+Due to my own personal constraints, the largest I can mail is 24&#34; x 36&#34; as a poster. 
 You also have the option to print it yourself- I will email you the file and you can print it in your preferred method.
 </p>
 
 <p>
-I will draw about anything you can think of. Any idea you've wanted done, I am up for the challenge!
+I will draw about anything you can think of. Any idea you&#39;ve wanted done, I am up for the challenge!
 I will not, however, draw the following:
 </p>
 

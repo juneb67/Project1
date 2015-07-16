@@ -72,7 +72,7 @@ h2.linkStyle {
   bottom: 5px;
   left: 5px;
   background: rgba(198, 61, 15, 0.75);
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 4px 8px;
   color: white;
   margin: 0;
@@ -84,7 +84,7 @@ h2.linkStyleSel {
   bottom: 5px;
   left: 5px;
   background: rgba(198, 61, 15, 0.75);
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 4px 8px;
   color: white;
   margin: 0;
@@ -317,48 +317,48 @@ ul#imageGallery li img {
 }
 
 #pic1 {
-  width: 135px;
-  height: 200px;
+  width: 101px;
+  height: 150px;
   background-image: url(../img/smSquidGirl.png);
   border-radius: 5px; 
   position: relative;
 }
 
 #pic2 {
-  width: 135px;
-  height: 200px;
+  width: 101px;
+  height: 150px;
   background-image: url(../img/smMotivation.png);
   border-radius: 5px;
   position: relative;
 }
 
 #pic3 {
-  width: 135px;
-  height: 200px;
+  width: 101px;
+  height: 150px;
   background-image: url(../img/smRoses.png);
   border-radius: 5px; 
   position: relative;
 }
 
 #pic4 {
-  width: 135px;
-  height: 200px;
+  width: 101px;
+  height: 150px;
   background-image: url(../img/smMelt.png);
   border-radius: 5px;  
   position: relative;
 }
 
 #pic5 {
-  width: 108px;
-  height: 160px;
+  width: 101px;
+  height: 150px;
   background-image: url(../img/smGettingReady.png);
   border-radius: 5px;  
   position: relative;
 }
 
 #pic6 {
-  width: 135px;
-  height: 200px;
+  width: 101px;
+  height: 150px;
   background-image: url(../img/smYumE.png);
   border-radius: 5px;  
   position: relative;
@@ -403,11 +403,7 @@ ul#imageGallery li img {
   }
   .pic-content {
 	display: none;
-  }
-  h2.linkStyle {
-	 display: none; 
-  }
-  
+  }  
   .pic-content-480 {
 	display: none;
 	
@@ -425,11 +421,7 @@ ul#imageGallery li img {
   }
   .pic-content {
 	display: none;
-  }
-  h2.linkStyle {
-	 display: none; 
-  }
-  
+  }  
 
   .pic-content-480 {
 	display: inherit;

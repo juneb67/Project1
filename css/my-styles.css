@@ -179,6 +179,116 @@ body {
   padding: 10px
 }
 
+/************ Navigation *************/
+
+.selected img
+{
+	filter: blur(6px);
+	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+	-o-filter: blur(5px);
+	-ms-filter: blur(5px);
+}
+
+.selected img:hover
+{
+	filter: blur(0);
+	-webkit-filter: blur(0);
+	-moz-filter: blur(0);
+	-o-filter: blur(0);
+	-ms-filter: blur(0);
+}
+#pic1 {
+  width: 101px;
+  height: 150px;
+  background-image: url(../img/smSquidGirl.png);
+  border-radius: 5px; 
+  position: relative;
+}
+
+#pic2 {
+  width: 101px;
+  height: 150px;
+  background-image: url(../img/smMotivation.png);
+  border-radius: 5px;
+  position: relative;
+}
+
+#pic3 {
+  width: 101px;
+  height: 150px;
+  background-image: url(../img/smRoses.png);
+  border-radius: 5px; 
+  position: relative;
+}
+
+#pic4 {
+  width: 101px;
+  height: 150px;
+  background-image: url(../img/smMelt.png);
+  border-radius: 5px;  
+  position: relative;
+}
+
+#pic5 {
+  width: 101px;
+  height: 150px;
+  background-image: url(../img/smGettingReady.png);
+  border-radius: 5px;  
+  position: relative;
+}
+
+#pic6 {
+  width: 101px;
+  height: 150px;
+  background-image: url(../img/smYumE.png);
+  border-radius: 5px;  
+  position: relative;
+}
+
+#pic1sm, #pic2sm, #pic3sm, #pic4sm, #pic5sm, #pic6sm {
+	margin: 0 auto 4px;
+	width: 325px;
+	height: 26px;
+	border-radius: 3px; 
+	background-size: cover;
+	position: relative;
+	border: 1px solid #000;
+ }
+
+h2.linkStyleSel {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  background: rgba(198, 61, 15, 0.75);
+  border-radius: 5px;
+  padding: 4px 8px;
+  color: white;
+  margin: 0;
+  font: 14px Sans-Serif;
+	filter: blur(6px);
+	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+	-o-filter: blur(5px);
+	-ms-filter: blur(5px);
+}
+
+h2.linkStyle {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  background: rgba(198, 61, 15, 0.75);
+  border-radius: 5px;
+  padding: 4px 8px;
+  color: white;
+  margin: 0;
+  font: 14px Sans-Serif;
+}
+
+
+
+
+
 /************ Commission PAGE *************/
 
 .commissionContent {
@@ -232,6 +342,10 @@ body {
   h1.h1Title {  
   	font-size: 1.5rem;
   }
+
+.commHeading {
+	font-size: 1.5rem;
+}
 
   .primary-content {
     padding-top: 25px;

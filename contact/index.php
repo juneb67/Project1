@@ -6,7 +6,7 @@
 	$pageName = "contact";
 	
 	include ('../includes/mainHeader.html');
-	//include ('../includes/pic_content.html');
+	include ('../includes/pic_content.html');
 
 	//check for form submission
 	if(isset($_POST["submit_contact"])) {	

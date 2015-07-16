@@ -131,7 +131,8 @@ var picName = pagesArray[selPgNo].smId;
 //console.log("line 131 is: " + pgToName);
 //Set textValue2 variable to equal the whole line of html for selected page
 //var textValue2 = '<div id="' + picName + '"><h2 class="linkStyle">' + pages[selectedHREF] + '</h2></div>';
-var textValue2 = '<div id="' + picName + '"><h2 class="linkStyle">' + pgToName + '</h2></div>';
+var textValue2 = '<div id="' + picName + '"></div>';
+//var textValue2 = '<div id="' + picName + '"><h2 class="linkStyle">' + pgToName + '</h2></div>';
 //console.log("Line 29 html is: " + textValue2);
 $( "div.sel_480" ).html(textValue2);
 
@@ -147,8 +148,6 @@ for(var i = 0; i < pagesArray.length; i++){
 	key += pagesArray[i].smId; // do something
 	var value = pagesArray[i].picNameSmall; // do something
 	$(key).css("background-image", "url(../img/" + value + ")");
-
-	//console.log("line 148 keys and values. Key " + key + " value " + value);
 };
 
 
@@ -163,50 +162,8 @@ $( ".imgNav" ).mouseleave(function() {
 });
 
 
-
-
-//Problem user when clicing on image goes to a dead end
-//Solution: create an overlay with the large image - Lightbox
-var $overlay = $('<div id="overlay"></div>');
-var $image = $("<img>");
-var $caption = $("<p></p>");
-
-//An image to overlay
-$overlay.append($image);
-
-//A caption
-$overlay.append($caption);
-
-//Add overlay
-$("body").append($overlay);
-
-//Capture the click event on a link to an image.
-$("#imageGallery a").click(function(event){
-  var imageLocation = $(this).attr("href");
-  
-  event.preventDefault();
-  
-  //Update overlay with the image linked in the link
-  $image.attr("src", imageLocation);
-
-  //Show the overlay
-  $overlay.show();
-
-  //Get child's alt attribute and set caption
-  var captionText = $(this).children("img").attr("alt");
-  $caption.text(captionText);  
-  
-});
-  
-//When overlay is clicked
-$overlay.click(function(){
-  //Hide the overlay
-  $overlay.hide();
-});
-
 //Footer - to keep it at the bottom
 $(window).bind("load", function () {
-	console.log("It loaded");
     var footer = $("#footer");
     var pos = footer.position();
     var height = $(window).height();

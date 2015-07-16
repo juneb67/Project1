@@ -6,63 +6,11 @@
 	$pageName = "index.php";
 	
 	include ('./includes/mainHeader.html');
-	//include ('./includes/pic_content.html');
+	include ('./includes/pic_content.html');
 
 ?>
-	<div class="navRow">
-		<div id="navRow" class="row">
-			<div class="medium-2 large-2 hide-for-small column">
-				<span class="selected">
-					<div id="pic1">
-						<img class="selected" height="200" width="135" src="img/smSquidGirl.png" />
-						<h2 class="linkStyleSel">Home</h2>
-					</div>
-				</span>
-			</div>
-			<div class="medium-2 large-2 hide-for-small column">
-				<a href="/about/" title="About Page!">
-    				<div id="pic2" class="imgNav">
-        				<h2 class="linkStyleSel">About</h2>
-        			</div>
-    			</a>
-			</div>
-			<div class="medium-2 large-2 hide-for-small column">
-				<a href="/gallery/" title="Gallery Page!">
-					<div id="pic3" class="imgNav">
-						<h2 class="linkStyle">Gallery</h2>
-					</div>
-				</a>
-			</div>
-			<div class="medium-2 large-2 hide-for-small column">
-				<a href="/shop/" title="Shop Page!">
-					<div id="pic4" class="imgNav">
-						<h2 class="linkStyle">Shop</h2>
-					</div>
-				</a>
-			</div>
-			<div class="medium-2 large-2 hide-for-small column">
-				<a href="/commission/" title="Commission Page!">
-					<div id="pic5" class="imgNav">
-						<h2 class="linkStyle">Commission</h2>
-					</div>
-				</a>
-			</div>
-			<div class="medium-2 large-2 hide-for-small column">
-				<a href="/contact/" title="Contact Page!">
-					<div id="pic6" class="imgNav">
-						<h2 class="linkStyle">Contact</h2>
-					</div>
-				</a>
-			</div>
-
-
-
-
-		</div><!-- End of row -->
-	</div><!-- end of navRow -->
-	
-	<div class="navRowBottom"></div>
-	
+   
+	<!-- Beginning of Primary Content -->   
     <div class="primary-content">
 		
         <div class="row">

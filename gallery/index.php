@@ -6,7 +6,7 @@
 	$pageName = "gallery";
 	
 	include ('../includes/mainHeader.html');
-	//include ('../includes/pic_content.html');
+	include ('../includes/pic_content.html');
 
 ?>
             
