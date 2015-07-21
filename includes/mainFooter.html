@@ -4,17 +4,31 @@
         All rights reserved. &copy; <a href="http://tapastic.com/vmbowman95" target="_blank">Victoria Bowman</a> 2015.
       </p>
     </footer>
-    
+	
+	
+	 <script>
+	  $('audio,video').mediaelementplayer({
+		success: function(player, node) {
+		  $('#' + node.id + '-mode').html('mode: ' + player.pluginType);
+		},
+		/** progress is the progress bar in the video ***/
+		features: ['playpause', 'progress'],
+		startLanguage: 'en',
+		translationSelector: true
+	  });
+	</script>
+
 	<?php
-       if($pageName == "index2.php") {
+       if($pageName == "index.php") {
 	?>
     
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <!-- My JavaScript customized scripts -->
 	<script src="js/jquery.js"></script>
+	<script src="js/mediaelement-and-player.min.js"></script>
     <script src="js/foundation.min.js"></script>
-    <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/app.min.js" type="text/javascript" charset="utf-8"></script>
     				    
     <?php
       } else {
@@ -23,9 +37,10 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="../js/jquery.js"></script>
+	<script src="../js/mediaelement-and-player.min.js"></script>
     <script src="../js/foundation.min.js"></script>
-    <script src="../js/app.js" type="text/javascript" charset="utf-8"></script>
-
+    <script src="../js/app.min.js" type="text/javascript" charset="utf-8"></script>
+	
 	<?php
 	  }
 	?>

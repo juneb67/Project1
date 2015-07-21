@@ -135,14 +135,20 @@ body {
 }
 
 .artVideoTitle {
+  font-family: 'Droid Serif', serif;
   color: white;
-  font-size: 1.75em;
+  font-size: 2.0em;
 }
 
 .artVideo {
   background-color: rgba(0,0,0,0.50);
   border-radius: 10px;
   border: 2px solid rgba(59, 55, 56, 0.95);
+}
+
+.videoContent {
+	max-width: 640px;
+	margin: 0 auto;
 }
 
 #modalTitle {
@@ -165,6 +171,7 @@ body {
 
 .main-footer {
   width: 100%;
+  height: 90px;
   padding-top: 22px;
   padding-bottom: 10px;
   border-top: 10px solid #C63D0F;
@@ -316,8 +323,9 @@ h2.linkStyle {
   font-size: 3.4em;
   text-align: center;
   color: #7E8F7C;
+  text-shadow: 2px 2px #ccc;
   display: block;
-  margin-top: 40px;
+  /*margin-top: 40px; */
 }
 
 /* Media Queries
@@ -356,4 +364,7 @@ h2.linkStyle {
 	padding-left: 0;
 	padding-right: 0;
   }
+
+
+
 

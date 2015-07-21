@@ -19,7 +19,7 @@ meta.foundation-mq-medium-only {
 
 meta.foundation-mq-large {
   font-family: "/only screen and (min-width:64.0625em)/";
-  width: 64.0625em; }
+  width: 64.0625em; }re
 
 meta.foundation-mq-large-only {
   font-family: "/only screen and (min-width:64.0625em) and (max-width:90em)/";
@@ -3896,7 +3896,6 @@ blockquote p {
     font-size: 2.5rem;
     font-weight: normal;
     line-height: 1;
-	background-color: whitesmoke;
     position: absolute;
     top: 0.625rem;
     right: 1.375rem; }

@@ -23,14 +23,14 @@
 		\nHave a wonderful day!
 		\nTori Bowman";
 	
-		// Email Guest
+		// Email visitor
 		mail ("$name <$email>", 'Tori Bowman\'s Comment Form', $body, 'From: Tori Bowman <vmbowman95@gmail.com>');
 		
-		// Body of Email sent to June Bowman
+		// Body of Email sent to Tori Bowman
 		$results = "Comments / Questions\n\nName is: $name\n\nEmail address is: $email\n\nQuestions / Comments are: $comments";
 					
-		// email June Bowman
-		mail ("June Bowman <june@junebowman.com>", "Questions / Comments", $results, "From: $name <$email>");
+		// email Tori Bowman
+		mail ("Tori Bowman <information@toribowman.com>", "Questions / Comments", $results, "From: $name <$email>");
 		
 	?>
 		
@@ -72,7 +72,7 @@
 			<div class="show-for-small-only column"><p>&nbsp;</p></div>
         	
 			<div align="center" class="small-12 medium-6 large-6 column">
-				<a href="#" data-reveal-id="myModal"><i class="fi-mail" id="title5"></i></a>
+				<a href="#" data-reveal-id="myModal"><div id="3dwrap"><i class="fi-mail"></i></div></a>
                 <p align="left">
 					If you would like to commission a drawing, need help fleshing out an idea or have any 
         			questions, please fill out the contact form and I'll be happy to assist you.
@@ -98,36 +98,40 @@
 			</p>
 			<br>
   
-			<form method="post" action="index.php">
+			<form method="post" action="index.php" data-abide>
 				<div class="row">
-					<div class="large-4 columns">
+					<div class="large-4 columns name-field">
 						<label for"fname">First Name
-							<input type="text" id="fname" name="firstName" placeholder="First Name" 
+							<input type="text"  required pattern="[a-zA-Z]+" id="fname" name="firstName" placeholder="First Name" 
 								value="<?php if (isset($_POST['firstName'])) echo stripslashes($_POST['firstName']); ?>" />
 						</label>
+						<small class="error">First Name is required and must be letters only.</small>
 					</div>
 					
-					<div class="large-4 columns">
+					<div class="large-4 columns name-field">
 						<label for"lname">Last Name
-							<input type="text" id="lname" name="lastName" placeholder="Last Name" 
+							<input type="text"  required pattern="[a-zA-Z]+"  id="lname" name="lastName" placeholder="Last Name" 
 								value="<?php if (isset($_POST['lastName'])) echo stripslashes($_POST['lastName']); ?>" />
 						</label>
+						<small class="error">Last Name is required and must be letters only.</small>
 					</div>
 					
-					<div class="large-4 columns">
+					<div class="large-4 columns email-field">
 						<label for"email">Email
-							<input type="text" id="email" name="email" placeholder="Email Address" 
+							<input type="email" required id="email" name="email" placeholder="Email Address" 
 								value="<?php if (isset($_POST['email'])) echo stripslashes($_POST['email']); ?>" />
 						</label>
+						<small class="error">A valid email address is required.</small>
 					</div>
 					
 				</div><!-- End of row div  -->
 			  
 				<div class="row">
-					<div align="center" class="large-12 columns">
+					<div align="center" class="large-12 columns textarea-field">
 						<label for"comments">Questions / Comments:
-							<textarea id="comments" name="comments" placeholder="Questions / Comments"></textarea>
+							<textarea required id="comments" name="comments" placeholder="Questions / Comments"></textarea>
 						</label>
+						<small class="error">Questions or comments are required.</small>
 					</div>
 				</div>
 			
@@ -147,7 +151,7 @@
 	
 	<?php
 	};// End of is isset
-			
+
 	include ('../includes/mainFooter.html');
 	
 	?>

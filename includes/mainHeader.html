@@ -2,21 +2,22 @@
 <html class="no-js" lang="en">
   <head>
     <title><?php echo $title; ?></title>
+	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Link for custom fonts from Google -->
     <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,700italic,400italic|Raleway:400,500,600,700' rel='stylesheet' type='text/css'>
     
     <?php
-    if($pageName == "index2.php"){
+    if($pageName == "index.php"){
     ?>
     
     <!-- Link for page 16 X 16 and 32 X 32 icons -->
     <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <link href="img/favicon32.ico" rel="shortcut icon" type="image/x-icon" />
     <link href="css/normalize.css" rel="stylesheet" media="screen">
-    <link href="css/foundation.css" rel="stylesheet" media="screen">
+    <link href="css/foundation.min.css" rel="stylesheet" media="screen">
     <link href="css/foundation-icons.css" rel="stylesheet" media="screen">
-    <link href="css/my-styles.css" rel="stylesheet" media="screen">
+    <link href="css/my-styles.min.css" rel="stylesheet" media="screen">
 	<script src="js/modernizr.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     
@@ -25,38 +26,32 @@
     ?>
     
     <!-- Link for page 16 X 16 and 32 X 32 icons -->
-    <link href="../img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+	<link href="../img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <link href="../img/favicon32.ico" rel="shortcut icon" type="image/x-icon" />
   	<link href="../css/normalize.css" rel="stylesheet" media="screen">
-    <link href="../css/foundation.css" rel="stylesheet" media="screen">
-    <link href="../css/foundation-icons.css" rel="stylesheet" media="screen">
-    <link href="../css/my-styles.css" rel="stylesheet" media="screen">
-    <script src="../js/modernizr.js"></script>
+	<link href="../css/foundation.min.css" rel="stylesheet" media="screen">
+	<link href="../css/foundation-icons.css" rel="stylesheet" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+   	<script src="../js/modernizr.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
-     
-    <!-- Custimization of Slick Carousel -->                
-	<style>
-    
-		.slick-next { right: 10px; }
-		.slick-prev { left: 10px; }
-		.slick-slide { padding: 10px 32px; }
-		.slick-initialized .slick-slide { padding-left: 75px; }
-		.slick-prev:before, .slick-next:before {
-  			color: rgba(59, 55, 56, 0.95); }
-    
-    </style>
+    <script src="../build/jquery.js"></script>
+    <script src="../build/mediaelement-and-player.min.js"></script>
+    <link rel="stylesheet" href="../build/mediaelementplayer.min.css" />
+    <link rel="stylesheet" href="../css/my-styles.min.css">
+    <link rel="stylesheet" href="../css/mejs-tori.css">
 
 	<?php
     }
     ?>        
-    
+  	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
   </head>
 
   <body>
   
     <header align="center" class="name-header">
       <span class="title"><?php echo $titleClass; ?></span>
+	  <div class="headerImg">
+	  </div>
       <h1 class="h1Title"><?php echo $h1Title; ?></h1>
     </header>
     

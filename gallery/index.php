@@ -9,15 +9,17 @@
 	include ('../includes/pic_content.html');
 
 ?>
-            
+    
 	<h3 class="h3Center">Sample of Tori's Art</h3>
                 
 	<div class="primary-content">
 
 		<div class="row">
         
-        	<div align="center" class="large-12 column">
-            	<p>Peruse artwork via video or look at all artwork at once in the form of images.</p>
+        	<div align="center" class="large-12 hide-for-small column">
+				<div class="large-12 column">
+            		<p>Peruse artwork via video or look at all artwork at once in the form of images.</p>
+				</div>
             </div>
         
 			<div align="center" class="large-6 show-for-large-up column">
@@ -32,7 +34,7 @@
 				</div><!-- End of 2nd row div  -->
             </div><!-- End of column div  -->
 
-			<div align="center" class="medium-6 hide-for-large-up show-for-medium-only column">
+			<div align="center" class="medium-6 show-for-medium-only column">
       			<div class="row">
               		<div align="left" class="medium-4 column">
                 		<a href="#" data-reveal-id="myVid"><i class="fi-video" id="title1"></i></a>
@@ -43,12 +45,15 @@
         	   		</div>
 				</div><!-- End of 2nd row div  -->
             </div><!-- End of column div  -->
-
             <div align="center" class="reveal-modal xlarge artVideo" id="myVid" data-reveal="">
 				<h2 class="artVideoTitle">Enjoy the Show!</h2>
-                <iframe src="https://www.youtube.com/embed/CQT-O8xD_Nc" height="315" width="560" 
-                	allowfullscreen="" frameborder="0">
-            	</iframe>
+				<div class="videoContent">
+					<video class="mejs-tori" width="640" height="360" controls preload="auto" poster="../img/lgCall.jpg">
+					<!--<video class="mejs-wmp" id="my_video_1" style="width:100%; height:100%;" controls="controls" width="100%" height="100%" preload="auto" poster="../img/lgTheDate.jpg">-->
+ 						<source src="../video/ToriArtVideo.mp4" type='video/mp4'>
+					</video>
+				</div>
+				
  				<a class="close-reveal-modal" aria-label="Close">&#215;</a>
             </div>
 		
@@ -289,6 +294,7 @@
 		</div><!-- End of initial row div  -->
 
 		<div class="row">
+				
 		<!-- Column of pictures for small displays  -->
 			<div class="small-12 show-for-small-only smallGalPics">
                 <div class="smallGallery"><img src="../img/lgCall.jpg" alt="Calling in intruders..." /></div>
@@ -307,7 +313,6 @@
 		</div>
 
 	</div> <!-- End of primary-content -->
-        
 
 <?php
 	include ('../includes/mainFooter.html');

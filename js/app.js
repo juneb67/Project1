@@ -3,67 +3,36 @@ $(document).ready(function() {
 //Get all the information about the navigation images and pages and put them into an object array
 var pagesArray = [
 	{
-		divId:"pic1", 
 		smId:"pic1sm", 
-		picNameSmall: "nav1.jpg", 
-		picNameMedium: "navMed1.jpg",
-    	picNameLarge: "smSquidGirl.png",
-    	pageName: "Home",
-    	pageAddress: "index.php"
+		picNameSmall: "nav1.jpg"
 	}, 
 	{
-		divId:"pic2", 
 		smId:"pic2sm", 
-		picNameSmall: "nav2.jpg", 
-		picNameMedium: "navMed2.jpg",
-    	picNameLarge: "smMotivation.png",
-    	pageName: "About",
-    	pageAddress: "index.php"
+		picNameSmall: "nav2.jpg"
 	}, 
 	{
-		divId: "pic3",
 		smId: "pic3sm",
-		picNameSmall: "nav3.jpg",
-		picNameMedium: "navMed3.jpg",
-		picNameLarge: "smRoses.png",
-		pageName: "Gallery",
-		pageAddress: "gallery.html"
+		picNameSmall: "nav3.jpg"
 	}, 
 	{
-		divId: "pic4",
 		smId: "pic4sm",
-		picNameSmall: "nav4.jpg",
-		picNameMedium: "navMed4.jpg",
-		picNameLarge: "smMelt.png",
-		pageName: "Shop",
-		pageAddress: "shop.html"
+		picNameSmall: "nav4.jpg"
 	}, 
 	{
-		divId: "pic5",
 		smId: "pic5sm",
-		picNameSmall: "nav5.jpg",
-		picNameMedium: "navMed5.jpg",
-		picNameLarge: "smGettingReady.png",
-		pageName: "Commission",
-		pageAddress: "commission.html"
+		picNameSmall: "nav5.jpg"
 	}, 
 	{
-		divId: "pic6",
 		smId: "pic6sm",
-		picNameSmall: "nav6.jpg",
-		picNameMedium: "navMed6.jpg",
-		picNameLarge: "smYumE.png",
-		pageName: "Contact",
-		pageAddress: "contact.html"
+		picNameSmall: "nav6.jpg"
 	}
 ];
 
 //Get the location of the current page 
 var fileName = location.pathname;
-//var fileName = location;
-//console.log("line 5, fileName is: " + fileName);
 
 //Assign filename variable the key for the pagesArray
+//.search will search "fileName" looking for the "" item
 if (fileName.search("about") > 0 ){
 	selPgNo = 1;
 } else if (fileName.search("gallery") > 0 ){
@@ -78,78 +47,25 @@ if (fileName.search("about") > 0 ){
 	selPgNo = 0;
 };
 
-//console.log("array items: " + pagesArray[selPgNo].picNameSmall + " selPgNo is: " + selPgNo);
-
-//Navigation for smaller < 480 screen size
-//This array will fill in the ID and the image for each navigation item.
-//[1] and [2] in pagesArray
-var obj = {
-  "#pic1sm": "nav1.jpg",
-  "#pic2sm": "nav2.jpg",
-  "#pic3sm": "nav3.jpg",
-  "#pic4sm": "nav4.jpg",
-  "#pic5sm": "nav5.jpg",
-  "#pic6sm": "nav6.jpg"
-};
-
-//page address with page name in navigation
-var pages = {
-  "index.php": "Home",
-  "about.php": "About",
-  "gallery.html": "Gallery",
-  "shop.html": "Shop",
-  "commission.html": "Commission",
-  "contact.html": "Contact"
-};
-
-//pic name object to use below for the selected page
-var picNameObj = {
-  "Home": "pic1sm",
-  "About": "pic2sm",
-  "Gallery": "pic3sm",
-  "Shop": "pic4sm",
-  "Commission": "pic5sm",
-  "Contact": "pic6sm"
-};
-
-//Get href for .selected_480 - this will be the "selected" page's name
-//var selectedHREF = $('.selected_480').attr('href');
-//console.log("ORIGINAL Line 113 Selected page's name: " + selectedHREF);
-//console.log("New line 113 page name is: " + pagesArray[selPgNo].pageAddress);
-var selectedHREF = pagesArray[selPgNo].pageAddress;
-
-
-//var pgToName = pages[selectedHREF];
-//console.log("ORIGINAL line 116 pgToName is: " + pgToName);
-var pgToName = pagesArray[selPgNo].pageName;
-
-//var picName = picNameObj[pgToName];
-//console.log("ORIGINAL line 119 Pic name is: " + picName);
+//Get the smID ID pic6sm, pic5sm, etc.
 var picName = pagesArray[selPgNo].smId;
 
-
-//console.log("line 131 is: " + pgToName);
 //Set textValue2 variable to equal the whole line of html for selected page
-//var textValue2 = '<div id="' + picName + '"><h2 class="linkStyle">' + pages[selectedHREF] + '</h2></div>';
 var textValue2 = '<div id="' + picName + '"></div>';
-//var textValue2 = '<div id="' + picName + '"><h2 class="linkStyle">' + pgToName + '</h2></div>';
-//console.log("Line 29 html is: " + textValue2);
+//put the value of textValue2 into the div.sel_480 div
+//this keep the nav item from blurring on mouse over - it's the page the visitor is on
 $( "div.sel_480" ).html(textValue2);
 
-//The .each function will iterate through each object in the obj array
+//The for loop will iterate through each object in the pagesArray array
 //The function will then populate the css background with the correct image
-//$.each( obj, function( key, value ) {
-	//$(key).css("background-image", "url(../img/" + value + ")");
-	//console.log("line 139 keys and values. Key " + key + " value " + value);
-//});
-
+//for the smaller screen sizes
 for(var i = 0; i < pagesArray.length; i++){
-	var key = "#";
-	key += pagesArray[i].smId; // do something
-	var value = pagesArray[i].picNameSmall; // do something
+	var key = "#"; //add the # sign for the ID
+	key += pagesArray[i].smId; //Get the smId name
+	var value = pagesArray[i].picNameSmall; // get the picture name
+	//set the correct image (value) for the div ID provided by the key
 	$(key).css("background-image", "url(../img/" + value + ")");
 };
-
 
 //Navigation for larger screens
 //When mouse hovers, fade picture
@@ -159,21 +75,6 @@ $( ".imgNav" ).hover(function() {
 //When the mouse leaves, remove fade
 $( ".imgNav" ).mouseleave(function() {
   $( this ).fadeTo( "fast", 1.0 )
-});
-
-
-//Footer - to keep it at the bottom
-$(window).bind("load", function () {
-    var footer = $("#footer");
-    var pos = footer.position();
-    var height = $(window).height();
-    height = height - pos.top - 50;
-    height = height - footer.height();
-    if (height > 0) {
-        footer.css({
-            'margin-top': height + 'px'
-        });
-    }
 });
 
 
