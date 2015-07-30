@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <title>JSON Lazy Load</title>
+	<script src="../js/jquery.js"></script>
+	<script>
+		
+		$(document).ready(function() {
+		
+			$.getJSON('http://www.stellarbiotechnologies.com/media/press-releases/json', function(fbResults) {
+				
+
+				$.each(fbResults.news, function( i ){
+				  document.write( "Title: " + fbResults.news[i]['title'] + "<br>Published: " +fbResults.news[i]['published'] + "<br><br>");
+				});
+
+
+				
+			});
+		
+		});
+	
+	</script>
+	
+  </head>
+  
+  <body>
+  
+  </body>
+  
+</html>
+	
