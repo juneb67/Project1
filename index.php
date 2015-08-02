@@ -37,7 +37,7 @@
         	</div>
             
             <div class="large-4 medium-5 column">
-                <img data-interchange="[/img/mdToriPic.jpg, (default)], [/img/lgToriPic.jpg, (large)]" class="radius">
+                <img data-interchange="[/img/lgToriPic2.jpg, (default)], [/img/mdToriPic.jpg, (large)]" class="radius">
 				<noscript><img src="/img/lgToriPic.jpg" alt="Picture of Tori Bowman"></noscript>
             </div>
             

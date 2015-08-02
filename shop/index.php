@@ -21,7 +21,7 @@
     	<div align="center" class="row topRow"><!-- row div for all pics  -->
         
         	<div align="center" class="large-4 column shopRow"><!-- first col row  -->
-            	<a href="../img/lgCall.jpg">
+            	<a href="../img/lgCall.jpg" target="_blank">
                 <img src="../img/lgCall.jpg" width="200" alt="Picture of a a female police officer 
                 making a telephone call."></a><br><br>
                $10.00<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -34,7 +34,7 @@
         	</div><!-- end of first col row  -->
 
         	<div align="center" class="large-4 column shopRow"><!-- col row  -->
-            	<a href="../img/lgGettingReady.jpg">
+            	<a href="../img/lgGettingReady.jpg" target="_blank">
                 <img src="../img/lgGettingReady.jpg" width="100" alt="Getting ready to go out!"></a><br><br>
                 $10.00<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 				<input type="hidden" name="cmd" value="_s-xclick">
@@ -46,7 +46,7 @@
         	</div><!-- end col row  -->
 
         	<div align="center" class="large-4 column shopRow"><!-- col row  -->
-            	<a href="../img/lgMelt.jpg">
+            	<a href="../img/lgMelt.jpg" target="_blank">
                 <img src="../img/lgMelt.jpg" width="100" alt="Face with melting attributes."></a><br><br>
 				$10.00<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 				<input type="hidden" name="cmd" value="_s-xclick">
@@ -59,7 +59,7 @@
         
         <div align="center" class="row"><!-- row div for all pics  -->
         	<div align="center" class="large-4 column shopRow2"><!-- col row  -->
-            	<a href="../img/lgMooning.jpg"><img src="../img/lgMooning.jpg" width="100" alt="Drifting on the moon."></a><br><br>
+            	<a href="../img/lgMooning.jpg" target="_blank"><img src="../img/lgMooning.jpg" width="100" alt="Drifting on the moon."></a><br><br>
 				$10.00<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 				<input type="hidden" name="cmd" value="_s-xclick">
 				<input type="hidden" name="hosted_button_id" value="Q6S8QDU96XSFN">
@@ -69,7 +69,7 @@
         	</div>
 
         	<div align="center" class="large-4 column shopRow2"><!-- col row  -->
-            	<a href="../img/lgMMotivation.jpg">
+            	<a href="../img/lgMMotivation.jpg" target="_blank">
                 <img src="../img/lgMotivation.jpg" width="100" alt="Finding motivation."></a><br><br>
 				$10.00<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 				<input type="hidden" name="cmd" value="_s-xclick">
@@ -80,7 +80,7 @@
 			</div>
 
         	<div align="center" class="large-4 column shopRow2"><!-- col row  -->
-            	<a href="../img/lgRoses.jpg">
+            	<a href="../img/lgRoses.jpg" target="_blank">
                 <img src="../img/lgRoses.jpg" width="100" alt="Woman with a rose in her hair."></a><br><br>
 				$10.00<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 				<input type="hidden" name="cmd" value="_s-xclick">
@@ -93,7 +93,7 @@
         
         <div align="center" class="row"><!-- row div for all pics  -->
         	<div align="center" class="large-4 column shopRow2"><!-- col row  -->
-            	<a href="../img/lgSquidgirl.jpg">
+            	<a href="../img/lgSquidgirl.jpg" target="_blank">
                 <img src="../img/lgSquidgirl.jpg" width="100" alt="Little girl with a squid for a head."></a><br><br>
 				$10.00<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 				<input type="hidden" name="cmd" value="_s-xclick">
@@ -104,7 +104,7 @@
          	</div>
 
         	<div align="center" class="large-4 column shopRow2"><!-- col row  -->
-            	<a href="../img/lgTheDate.jpg">
+            	<a href="../img/lgTheDate.jpg" target="_blank">
                 <img src="../img/lgTheDate.jpg" width="200" alt="Going on an important date!"></a><br><br>
 				$10.00<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 				<input type="hidden" name="cmd" value="_s-xclick">
@@ -115,7 +115,7 @@
          	</div>
 
         	<div align="center" class="large-4 column shopRow2"><!-- col row  -->
-            	<a href="../img/lgYumE.jpg">
+            	<a href="../img/lgYumE.jpg" target="_blank">
                 <img src="../img/lgYumE.jpg" width="100" alt="Mouth with an eyeball."></a><br><br>
 				$10.00<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 				<input type="hidden" name="cmd" value="_s-xclick">
@@ -128,7 +128,7 @@
         
         <div align="center" class="row shopRow2"><!-- row div for all pics  -->
         	<div align="center" class="large-4 column"><!-- col row  -->
-            	<a href="../img/lgFleur1.jpg">
+            	<a href="../img/lgFleur1.jpg" target="_blank">
                 <img src="../img/lgFleur1.jpg" width="100" alt="Fleur de lis - style one."></a><br><br>
 				$10.00<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 				<input type="hidden" name="cmd" value="_s-xclick">
@@ -139,7 +139,7 @@
       		</div>
 
         	<div align="center" class="large-4 column shopRow2"><!-- col row  -->
-            	<a href="../img/lgFleur2.jpg">
+            	<a href="../img/lgFleur2.jpg" target="_blank">
                 <img src="../img/lgFleur2.jpg" width="100" alt="Fleur de lis - style two."></a><br><br>
 				$10.00<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 				<input type="hidden" name="cmd" value="_s-xclick">
@@ -150,7 +150,7 @@
       		</div>
 
         	<div align="center" class="large-4 column shopRow2"><!-- col row  -->
-            	<a href="../img/lgRoses2.jpg"><img src="../img/lgRoses2.jpg" width="100" alt="Roses."></a><br><br>
+            	<a href="../img/lgRoses2.jpg" target="_blank"><img src="../img/lgRoses2.jpg" width="100" alt="Roses."></a><br><br>
 				$10.00<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 				<input type="hidden" name="cmd" value="_s-xclick">
 				<input type="hidden" name="hosted_button_id" value="DC75SN4Z4NWLG">
@@ -162,7 +162,7 @@
         
      	<div align="center" class="row"><!-- row div for all pics  -->
         	<div align="center" class="large-4 column shopRow2"><!-- col row  -->
-            	<a href="../img/lgBarrel.jpg"><img src="../img/lgBarrel.jpg" width="100" alt="Bourbon barrel."></a><br><br>
+            	<a href="../img/lgBarrel.jpg" target="_blank"><img src="../img/lgBarrel.jpg" width="100" alt="Bourbon barrel."></a><br><br>
 				$10.00<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 				<input type="hidden" name="cmd" value="_s-xclick">
 				<input type="hidden" name="hosted_button_id" value="9YAEKA329HX5S">
