@@ -93,8 +93,9 @@ h1.h1Title {
 }
 
 img {
-  border-radius: 10px;
+  border-radius: 0px;
 }
+
 
 .smallGallery {
   padding: 15px;
